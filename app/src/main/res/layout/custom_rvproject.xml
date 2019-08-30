@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logoProject"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/titleProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/logoProject"
+                android:text="Inventaristic"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/subtitleProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/logoProject"
+                android:text="Dekstop | Individual Project"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="normal"
+                android:layout_below="@id/titleProject"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/detailProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/logoProject"
+                android:text="Inventarist Application For School"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_below="@id/subtitleProject"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/yearProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suspended"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
