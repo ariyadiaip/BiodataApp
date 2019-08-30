@@ -15,6 +15,7 @@ import id.sch.bdg.smkn4.pwpb.biodataapp.aip.PrimaryActivity;
 import id.sch.bdg.smkn4.pwpb.biodataapp.aip.ProjectActivity;
 import id.sch.bdg.smkn4.pwpb.biodataapp.aip.ResumeActivity;
 import id.sch.bdg.smkn4.pwpb.biodataapp.aip.SkillActivity;
+import id.sch.bdg.smkn4.pwpb.biodataapp.audi.ProfileAudiActivity;
 import id.sch.bdg.smkn4.pwpb.biodataapp.salman.ProfileSalmanActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         //tambah isi list
         peopleList.add(new People(R.drawable.photo_aip, "Aip Ariyadi"));
-        peopleList.add(new People(R.drawable.ic_skill, "Audi Syahzehan"));
+        peopleList.add(new People(R.drawable.audi, "Audi Syahzehan"));
         peopleList.add(new People(R.drawable.salman, "Salman Fauzan F. A."));
 
         //tambah adapter
@@ -51,9 +52,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent i = new Intent(MainActivity.this, PrimaryActivity.class);
                     startActivity(i);
                 } else if (position == 1) {
-                    //null
-//                    Intent i = new Intent(MainActivity.this, SkillActivity.class);
-//                    startActivity(i);
+                    Intent i = new Intent(MainActivity.this, ProfileAudiActivity.class);
+                    startActivity(i);
                 } else if (position == 2) {
                     Intent i = new Intent(MainActivity.this, ProfileSalmanActivity.class);
                     startActivity(i);

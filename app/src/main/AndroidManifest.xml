@@ -33,6 +33,9 @@
         </activity>
         <activity android:name=".salman.SkillSalmanActivity">
         </activity>
+        <activity android:name=".audi.ContactAudiActivity"></activity>
+        <activity android:name=".audi.ProfileAudiActivity">
+        </activity>
     </application>
 
 </manifest>
